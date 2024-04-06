@@ -11,7 +11,7 @@ The Car Dealership Management System is a Java application designed to manage th
 
 ## Installation
 1. **Clone the Repository**:
-- git clone https://github.com/your-username/your-repository.git
+- git clone https://github.com/shaquib82/Java-Project-5-Car-Dealership.git
 2. **Open the Project**: 
 Open the project in your preferred Java IDE (Integrated Development Environment), such as IntelliJ IDEA, Eclipse, or NetBeans.
 3. **Run the Application**: 
