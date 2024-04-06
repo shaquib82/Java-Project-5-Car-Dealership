@@ -8,6 +8,15 @@ public class Car {
     private String[] parts;
 
     public Car(String make, double price, int year, String color, String[] parts) {
+        /**
+     * Constructs a new Car object.
+     * 
+     * @param make The make of the car.
+     * @param model The model of the car.
+     * @param year The year of the car.
+     * @param color The color of the car.
+     * @param parts The parts of the car.
+     */
         this.make = make;
         this.price = price;
         this.year = year;
@@ -23,22 +32,47 @@ public class Car {
         this.parts = Arrays.copyOf(source.parts, source.parts.length);
     }
     public String getMake() {
+        /**
+     * Gets the make of the car.
+     * 
+     * @return The make of the car.
+     */
         return this.make;
     }
 
     public double getPrice() {
+        /** 
+        * Gets the price of the car.
+     * 
+     * @return The price of the car.
+     */
         return this.price;
     }
 
     public int getYear() {
+         /** 
+        * Gets the year of the car.
+     * 
+     * @return The year of the car.
+     */
         return this.year;
     }
 
     public String getColor() {
+         /** 
+        * Gets the color of the car.
+     * 
+     * @return The color of the car.
+     */
         return this.color;
     }
     
     public String[] getParts() {
+        /** 
+        * Gets the parts of the car.
+     * 
+     * @return The parts of the car.
+     */
         return Arrays.copyOf(this.parts, this.parts.length) ;
     }
 
