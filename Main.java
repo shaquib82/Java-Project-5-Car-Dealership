@@ -1,10 +1,13 @@
 import java.util.Scanner;
+/**
+ * Main class to demonstrate the functionality of the car dealership system.
+ */
 
 public class Main {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
-        
+         // Add some initial cars to the dealership inventory
         Car[] cars = new Car[] {
             new Car("Nissan", 5000, 2020, "red", new String[] {"tires", "keys"}),
             new Car("Dodge", 8500, 2019, "blue", new String[] {"tires", "keys"}),
@@ -15,9 +18,10 @@ public class Main {
         
         Dealership dealership = new Dealership(cars);
         
-
+        // Display menu options
         System.out.println("\n ****** JAVA DEALERSHIP! ****** \n");
         System.out.print("Welcome! Enter the type of car you're looking for: ");
+         // Process user input
         String make = scan.nextLine();
         System.out.print("Enter your budget: ");
         int budget = scan.nextInt();          
