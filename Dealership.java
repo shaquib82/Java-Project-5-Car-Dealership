@@ -1,6 +1,8 @@
 public class Dealership {
     private Car[] cars;
-
+/**
+ * Represents a car dealership, managing inventory and customer transactions.
+ */
     public Dealership(Car[] cars) {
         this.cars = new Car[cars.length];
         for (int i = 0; i < cars.length; i++) {
@@ -15,8 +17,14 @@ public class Dealership {
     public Car getCar(int index) {
         return new Car(this.cars[index]);
     }
-
+     
     public void sell(int index) {
+        /**
+     * Sells a car to a customer.
+     * 
+     * @param car The car to sell.
+     * @param customer The customer purchasing the car.
+     */
         this.cars[index].drive();
         this.cars[index] = null;
     }
@@ -36,6 +44,9 @@ public class Dealership {
     }
 
     public String toString() {
+        /**
+     * Displays the list of cars in the dealership's inventory.
+     */
         String temp = "";
         for (int i = 0; i < this.cars.length; i++) {
             temp += "Parking Spot: " + i + "\n";
